@@ -84,3 +84,7 @@ export const AUTHENTICATION_ROLE_API = {
   BASE_ROLE_LABEL_VALUE: "base-role/label-value",
   ROLE_PERMISSIONS: "role-permissions"
 }
+
+export const BANK_INFO={
+  GET_BANKS:"get-banks"
+}

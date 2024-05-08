@@ -8,19 +8,23 @@ import TableSkeleton from "@custom-components/skeleton/TableSkeleton"
 import { Card, Table, Tooltip } from "antd"
 import Column from "antd/es/table/Column"
 import { Badge, CardBody } from "reactstrap"
-import data from "./account-list.json"
 import EditAcctData from "./EditAcctData"
 import { useState } from "react"
+import useFetch from "@hooks/useFetch"
+import getUrl from "@api/url"
+import { getCompanyId } from "@utils/index"
 
 const BankingIntegration = () => {
-
   const [open, setOpen] = useState(false)
-  const [dataValue, setDataValue]=useState<TBankDetail>({} as TBankDetail)
-  const bankData=(data:any)=>{
+  const [dataValue, setDataValue] = useState<TBankDetail>({} as TBankDetail)
+  const bankData = (data: any) => {
     console.log(data)
     setOpen(true)
     setDataValue(data)
   }
+  const [data] = useFetch(getUrl("BANKING_API", "BANK_INFO", "GET_BANKS"), {
+    apiParams: { params: { companyId: getCompanyId() } }
+  })
   return (
     <>
       <Breadcrumbs withGoBack title="Bank Integration" data={breadCrumb} />
@@ -77,7 +81,12 @@ const BankingIntegration = () => {
           </CardBody>
         </Card>
       </section>
-      <EditAcctData open={open} setOpen={setOpen} dataValue={dataValue} setDataValue={setDataValue}/>
+      <EditAcctData
+        open={open}
+        setOpen={setOpen}
+        dataValue={dataValue}
+        setDataValue={setDataValue}
+      />
     </>
   )
 }

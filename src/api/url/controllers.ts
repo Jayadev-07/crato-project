@@ -30,3 +30,7 @@ export const CLOUD_SERVICES_API = {
   GET_DOWNLOD_URL: "get-download-url",
   GET_UPLOAD_URL: "get-upload-url"
 }
+
+export const BANKING_API = {
+  BANK_INFO:"bank-info"
+}
