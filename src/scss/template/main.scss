@@ -1,0 +1,68 @@
+@import "./bootstrap/bootstrap.scss";
+@import "./bootstrap/bootstrap-extended.scss";
+@import "./colors/colors.scss";
+@import "./components/components.scss";
+
+@import "./react/index";
+
+body {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+@media print {
+  .fc-widget-normal {
+    display: none;
+  }
+  @page {
+    size: auto; /* auto is the initial value */
+    margin: 0mm; /* this affects the margin in the printer settings */
+  }
+  table {
+    page-break-inside: auto;
+    overflow: hidden;
+  }
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tfoot {
+    display: table-footer-group;
+  }
+  html {
+    background-color: #ffffff;
+    margin: 0 !important; /* this affects the margin on the html before sending to printer */
+    padding: 0 !important;
+  }
+
+  body {
+    border: solid 1px blue;
+    margin: 0; /* margin you want for the content */
+  }
+  .header-navbar,
+  .main-menu,
+  .scroll-top,
+  .no-print {
+    display: none !important;
+    //   height: 0px !important;
+  }
+  .app-content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .invoice-preview,
+  footer {
+    background: white;
+  }
+  .card {
+    box-shadow: none;
+    margin: 0;
+  }
+  @media (max-width: 767.98px) {
+    html[dir] body .app-content {
+      padding: 0 !important;
+    }
+  }
+}

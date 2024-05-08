@@ -1,0 +1,9 @@
+@import "bootstrap/scss/functions"; // Bootstrap core function
+@import "functions";
+
+@import "../../utilities/variables/variables";
+@import "variables";
+@import "bootstrap/scss/variables"; // Bootstrap core variable
+
+@import "bootstrap/scss/mixins"; // Bootstrap core mixins
+@import "mixins";

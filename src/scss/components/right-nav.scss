@@ -1,0 +1,134 @@
+.transition-button {
+  width: 40px !important;
+  padding: 10px !important;
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  transition: width 0.2s linear !important;
+}
+
+.transition-button:hover {
+  width: 103px !important;
+}
+
+.transition-button span {
+  display: none !important;
+  white-space: nowrap !important;
+}
+
+.transition-button:hover span {
+  display: inline-block !important;
+  margin: 3px !important;
+}
+
+.notification-btn {
+  padding: 10px;
+}
+
+.notifi-wrapper {
+  width: 400px !important;
+  padding: 0px;
+  top: 70px !important;
+  height: 25rem;
+  margin-bottom: 10px;
+}
+
+.notifi-info {
+  height: 22rem;
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.notifi-info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.notifi-info::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border-radius: 10px;
+}
+
+.notifi-info::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.notification-section {
+  padding: 15px !important;
+}
+
+.notifi-wrapper.dropdown-menu.dropdown-menu-end.show {
+  top: 67px !important;
+  margin: 0px !important;
+}
+
+.border-bottom.border-1 {
+  margin: 0px !important;
+}
+
+.notifi-count {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0px 4px;
+  font-size: 10px;
+}
+
+@media (max-width: 767px) {
+  .notifi-count {
+    top: 10px;
+    right: 65px;
+    font-size: 10px;
+  }
+
+  .notifi-wrapper.dropdown-menu.dropdown-menu-end.show {
+    top: 55px !important;
+    margin: 0px !important;
+  }
+}
+
+.notify-num {
+  border-radius: 50%;
+  background: #34a353;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 0px 7px;
+}
+
+.notification-wrapper {
+  padding: 10px 15px;
+}
+
+.no-notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17rem;
+}
+
+.heading-text {
+  padding-left: 2px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.notification-wrapper:hover {
+  background: #f4f3f4;
+}
+
+.count-value {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.avatar-bg {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 200px;
+}

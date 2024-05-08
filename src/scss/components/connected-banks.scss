@@ -1,0 +1,21 @@
+.banking-container {
+  max-height: 76vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  .bank-details {
+    scroll-snap-align: start;
+  }
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #d8d8d8;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border-radius: 10px;
+  }
+}

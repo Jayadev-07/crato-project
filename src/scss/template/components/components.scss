@@ -1,0 +1,25 @@
+@import "../bootstrap/include";
+@import "../components/include";
+
+@import "../../utilities/mixins/transitions.scss";
+
+@import "../layouts/main";
+
+@import "../menu/navigation";
+@import "../menu/menu-types/horizontal-menu.scss";
+@import "../menu/menu-types/vertical-menu.scss";
+@import "../menu/menu-types/vertical-overlay-menu.scss";
+
+@import "../components/avatar.scss";
+@import "../components/search.scss";
+@import "../components/bootstrap-social.scss";
+@import "../components/demo.scss";
+@import "../components/customizer.scss";
+@import "../components/divider.scss";
+@import "../components/timeline.scss";
+@import "../components/custom-options.scss";
+
+@import "../plugins/ui/breakpoints";
+@import "../plugins/forms/select2";
+@import "../plugins/tables/datatables";
+@import "../plugins/forms/form-number-input.scss";

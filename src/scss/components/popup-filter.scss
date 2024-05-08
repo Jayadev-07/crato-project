@@ -1,0 +1,85 @@
+.filterMenu {
+  width: 30vw;
+  max-height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    background-clip: content-box;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+}
+.custom-badge {
+  color: rgb(95, 99, 104);
+  border-radius: 50vh;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  box-shadow: #dadce0 0px 0px 0px 1px inset;
+  padding: 0.5rem 1rem;
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0 !important;
+  }
+}
+.custom-badge-container {
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.filterButton {
+  & > button {
+    border-radius: 50vh !important;
+    &::after {
+      transform: translateX(-5px);
+    }
+  }
+}
+.form-floating {
+  display: flex;
+  margin: 1rem;
+}
+.filterLabel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  padding-left: 4rem;
+}
+.action-wrapper {
+  position: relative;
+  .option:hover {
+    background-color: #e5f8ed;
+  }
+}
+.filter-actions {
+  width: 100%;
+  bottom: -8px;
+  border-top: 1px solid rgba(34, 41, 47, 0.08);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  position: sticky;
+  button {
+    flex-grow: 1;
+  }
+}
+.is-disabled {
+  & > button {
+    cursor: not-allowed !important;
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "name": "app",
+    "interpreter": "node",
+    "script": "./server.js"
+  }

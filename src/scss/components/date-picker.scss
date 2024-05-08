@@ -1,0 +1,71 @@
+.customDatePicker {
+  background: white !important;
+  padding: 0.6rem 0rem !important;
+  width: 100% !important;
+  z-index: 2 !important;
+}
+
+.dateSelected {
+  width: fit-content !important;
+  background: #34a353 !important;
+  color: #fff !important;
+  width: 100%;
+}
+
+.datePickerWrapper {
+  position: relative;
+  width: 100%;
+
+  & > .flatpickr-input[readonly],
+  & > .flatpickr-input ~ & > .form-control[readonly],
+  & > .flatpickr-human-friendly[readonly] {
+    opacity: 0 !important;
+  }
+
+  p {
+    position: absolute;
+    top: 0;
+    transform: translateY(50%);
+    left: 1.4rem;
+  }
+}
+
+.show-on-wrappper {
+  .hover-hide {
+    display: show;
+  }
+
+  .hover-show {
+    display: none;
+  }
+
+  &:hover {
+    .hover-hide {
+      display: none;
+    }
+
+    .hover-show {
+      display: block;
+    }
+  }
+}
+
+.clear-btn {
+  background: #ea54551f;
+  padding: 4px 5px 4px 4px;
+  margin: 4px;
+
+  &:hover {
+    background: #ff000094 !important;
+    color: #fff;
+  }
+}
+
+.filterButton {
+  & > button {
+    border-radius: 50vh !important;
+    &::after {
+      transform: translateX(-5px);
+    }
+  }
+}

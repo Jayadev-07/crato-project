@@ -1,0 +1,16 @@
+.table {
+  th.show-minimal,
+  td.show-minimal {
+    width: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  td.show-minimal {
+    margin-left: 1rem !important;
+  }
+  th.end,
+  td.end {
+    padding-left: 10rem;
+    width: 6rem;
+  }
+}

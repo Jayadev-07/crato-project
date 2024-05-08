@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "institution": "Bank A",
+    "acctNumber": "123456789",
+    "acctNature": "Savings",
+    "acctType": "Personal",
+    "glAccount": "GL123",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "institution": "Bank B",
+    "acctNumber": "987654321",
+    "acctNature": "Checking",
+    "acctType": "Business",
+    "glAccount": "GL456",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "institution": "Bank C",
+    "acctNumber": "654321987",
+    "acctNature": "Savings",
+    "acctType": "Personal",
+    "glAccount": "GL789",
+    "status": "inactive"
+  },
+  {
+    "id": 4,
+    "institution": "Bank D",
+    "acctNumber": "321654987",
+    "acctNature": "Checking",
+    "acctType": "Business",
+    "glAccount": "GL321",
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "institution": "Bank E",
+    "acctNumber": "456789123",
+    "acctNature": "Savings",
+    "acctType": "Personal",
+    "glAccount": "GL987",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "institution": "Bank F",
+    "acctNumber": "789123456",
+    "acctNature": "Checking",
+    "acctType": "Plaid Silver Standard 0.1% Interest Saving",
+    "glAccount": "GL654",
+    "status": "inactive"
+  },
+  {
+    "id": 7,
+    "institution": "Bank G",
+    "acctNumber": "741852963",
+    "acctNature": "Savings",
+    "acctType": "Personal",
+    "glAccount": "GL741",
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "institution": "Bank H",
+    "acctNumber": "852963741",
+    "acctNature": "Checking",
+    "acctType": "Business",
+    "glAccount": "GL852",
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "institution": "Bank I",
+    "acctNumber": "963741852",
+    "acctNature": "Savings",
+    "acctType": "Personal",
+    "glAccount": "GL963",
+    "status": "inactive"
+  },
+  {
+    "id": 10,
+    "institution": "Bank J",
+    "acctNumber": "147258369",
+    "acctNature": "Checking",
+    "acctType": "Business",
+    "glAccount": "GL147",
+    "status": "active"
+  }
+]
